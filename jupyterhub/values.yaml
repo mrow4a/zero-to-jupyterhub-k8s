@@ -79,7 +79,11 @@ hub:
   shutdownOnLogout:
   templatePaths: []
   templateVars: {}
-
+  livenessProbe:
+    enabled: false
+    initialDelaySeconds: 30
+  readinessProbe:
+    enabled: true
 
 rbac:
   enabled: true
